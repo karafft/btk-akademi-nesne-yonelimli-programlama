@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\bin\Debug\net7.0\BookStore.deps.json
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\bin\Debug\net7.0\BookStore.dll
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\bin\Debug\net7.0\BookStore.pdb
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\obj\Debug\net7.0\BookStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\obj\Debug\net7.0\BookStore.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\obj\Debug\net7.0\BookStore.AssemblyInfo.cs
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\obj\Debug\net7.0\BookStore.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\obj\Debug\net7.0\BookStore.dll
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\obj\Debug\net7.0\refint\BookStore.dll
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\obj\Debug\net7.0\BookStore.pdb
+C:\Users\Admin\Desktop\nesne\Csharp\BookStore\obj\Debug\net7.0\ref\BookStore.dll
