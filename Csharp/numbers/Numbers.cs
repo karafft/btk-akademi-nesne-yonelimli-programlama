@@ -1,78 +1,78 @@
 namespace numbers;
 public class Numbers
 {
-    public int[] _arr; //Global Scope
-    public int _counter; //Global Scope
+    public int[] arr; //Global Scope
+    public int counter; //Global Scope
 
     public Numbers(int size)
     {
-        _arr = new int[size];
-        _counter = 0;
+        this.arr = new int[size];
+        this.counter = 0;
     }
 
     public void Add(int value)
     {
-        if (_counter >= _arr.Length)
+        if (this.counter >= this.arr.Length)
         {
             throw new Exception("Dizi kapasitesi dolu!");
         }
 
-        _arr[_counter] = value;
-        _counter++;
+        this.arr[this.counter] = value;
+        this.counter++;
     }
-    
+
     public int GetValue(int index)
     {
-        // Out of range hatasını önlemek için index >= _counter olarak düzeltildi.
-        if (index < 0 || index >= _counter)
+        // Out of range hatasını önlemek için index >= counter olarak düzeltildi.
+        if (index < 0 || index >= this.counter)
         {
             throw new IndexOutOfRangeException("Dizi indexi geçersiz.");
         }
-        return _arr[index];
+        return this.arr[index];
     }
 
     public int FindMax()
     {
-        if (_arr == null || _counter == 0)
+        if (this.arr == null || this.counter == 0)
         {
             throw new Exception("Dizi boş veya tanımlanmamış.");
         }
 
-        int max = _arr[0];
-        for (int i = 1; i < _counter; i++)
+        int max = this.arr[0];
+        for (int i = 1; i < this.counter; i++)
         {
-            if (_arr[i] > max)
+            if (this.arr[i] > max)
             {
-                max = _arr[i];
+                max = this.arr[i];
             }
         }
         return max;
     }
-    
+
     public int FindMin()
     {
-        if (_arr == null || _counter == 0)
+        if (this.arr == null || this.counter == 0)
         {
             throw new Exception("Dizi boş veya tanımlanmamış.");
         }
 
-        int min = _arr[0];
-        for (int i = 1; i < _counter; i++)
+        int min = this.arr[0];
+        for (int i = 1; i < this.counter; i++)
         {
-            if (_arr[i] < min)
+            if (this.arr[i] < min)
             {
-                min = _arr[i];
+                min = this.arr[i];
             }
         }
         return min;
     }
 
-    // Ödev verilen sayının indexini bulan method (Program.cs'den buraya taşındı)
+    // Ödev verilen sayının indexini bulan method 
     public int FindIndex(int value)
     {
-        for (int i = 0; i < _counter; i++)
+        for (int i = 0; i < this.counter; i++)
         {
-            if (_arr[i] == value)
+            if (this.arr[i] == value)
             {
                 return i;
             }
@@ -84,30 +84,30 @@ public class Numbers
     public void Remove()
     {
         // out of range hatası önleme. 0 dan aşağı düşmemesini sağla.
-        if (_counter > 0)
+        if (this.counter > 0)
         {
-            _counter--;
+            this.counter--;
         }
         else
         {
             Console.WriteLine("Hata: Dizi zaten boş. 0'dan aşağı düşemez.");
         }
     }
-    
-    // (Ekstra) İsteğe bağlı olarak index ile silme işlemi yapan RemoveAt metodu:
+
+    // index ile silme işlemi yapan RemoveAt metodu:
     public void RemoveAt(int index)
     {
         // Out of range hatası önleme
-        if (index < 0 || index >= _counter)
+        if (index < 0 || index >= this.counter)
         {
-            Console.WriteLine("Hata: Geçersiz index. Out of range önlendi.");
+            Console.WriteLine("Hata: Geçersiz index. Out of range.");
             return;
         }
 
-        for (int i = index; i < _counter - 1; i++)
+        for (int i = index; i < this.counter - 1; i++)
         {
-            _arr[i] = _arr[i + 1];
+            this.arr[i] = this.arr[i + 1];
         }
-        _counter--;
+        this.counter--;
     }
 }
